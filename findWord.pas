@@ -29,17 +29,25 @@ begin
   spc := 0;
   wrd := '';
 
+  (* Loops through the given string *)
   for i := 0 to high(sntc) do
   begin
 
     if(index = 0) and (sntc[i+1] <> ' ') and (spc = 0) then
     begin
+    
       wrd := wrd + sntc[i+1]
+    
     end
     else
     begin
+      
+      (* Increments the spc variable by one if the string at given position is a space *)
       if(sntc[i+1] = ' ') then
-      spc := spc+1;
+      begin
+        spc := spc+1;
+      end;
+      (* if the 'spc' - variable is equal to the given index then add the following characters to the 'wrd' - variable *)
       if(spc = index) and (sntc[i+1] <> ' ') then
       begin
         wrd := wrd + sntc[i+1]
