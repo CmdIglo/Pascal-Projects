@@ -18,7 +18,13 @@ uses
 var
   ints: array [0..5] of integer = (1, 2, 3, 4, 3, 2);
 
-(* The main function *)
+(* 
+  The main function
+  Finds the first appearance of a given integer in an integer-array
+  i: integer, used for the for-loop
+  ret: integer, return-value
+  
+*)
 function findeIndex(arr: array of integer; num: integer) : integer;
 var
   i : integer;
