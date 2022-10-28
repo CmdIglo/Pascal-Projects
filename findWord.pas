@@ -15,6 +15,8 @@ var
 {*
 
   Finds the word at the n-th place in a string
+  i: integer, used for the for-loop
+  spc: integer, holds the number of occurences of the space string
 
 *}
 
