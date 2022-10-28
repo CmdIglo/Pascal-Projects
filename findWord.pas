@@ -33,7 +33,9 @@ begin
   begin
 
     if(index = 0) and (sntc[i+1] <> ' ') and (spc = 0) then
-    wrd := wrd + sntc[i+1]
+    begin
+      wrd := wrd + sntc[i+1]
+    end
     else
     begin
       if(sntc[i+1] = ' ') then
